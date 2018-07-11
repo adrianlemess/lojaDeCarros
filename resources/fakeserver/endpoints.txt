@@ -1,0 +1,12 @@
+#Veiculos
+
+- getCategorias
+- getVeiculos
+- getVeiculoById
+- editarVeiculo
+- criarVeiculo
+- comprarVeiculo
+
+#Cliente
+- cadastrarCliente
+- Login
