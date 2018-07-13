@@ -16,7 +16,7 @@ import { Tela404Component } from './tela404/tela404.component';
     HttpClientModule,
     AuthenticationModule,
     AppRoutingModule
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
