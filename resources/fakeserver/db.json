@@ -8,17 +8,17 @@
       "categoria": "carro",
       "imagemUrl": "https://img.olx.com.br/images/67/671816000602508.jpg",
       "valor": 21500,
-      "unidadesEmEstoque": 0
+      "unidadesEmEstoque": 10
     },
     {
       "id": 2,
       "marca": "Dodge",
       "modelo": "Dakota Durango SLT 5.2 4x4 V8",
       "ano": 1998,
-      "valor": 28.47,
-      "unidadesEmEstoque": 2,
       "categoria": "carro",
-      "imagemUrl": "https://i.ytimg.com/vi/NtCOyk1KP5g/maxresdefault.jpg"
+      "imagemUrl": "https://i.ytimg.com/vi/NtCOyk1KP5g/maxresdefault.jpg",
+      "valor": 28.47,
+      "unidadesEmEstoque": 2
     },
     {
       "id": 3,
@@ -86,7 +86,7 @@
       "modelo": "G-360 A 4x2 3-Eixos/A 6x2 2p (dies.)(E5)",
       "ano": 2018,
       "valor": 291334,
-      "unidadesEmEstoque": 1,
+      "unidadesEmEstoque": 3,
       "categoria": "caminhao",
       "imagemUrl": "https://img.clasf.com.br/2017/05/20/SCANIA-G-420-A-4X2-3-EIXOSA-6X2-2P-DIESEL-20102011-20170520071146.jpg"
     },
@@ -126,100 +126,11 @@
       "ano": 2013,
       "categoria": "moto",
       "valor": 28990,
-      "unidadesEmEstoque": 0,
-      "imagemUrl": "http://www.doydomotos.com/wp/wp-content/uploads/2016/12/HORNET-2014-5.png",
-      "id": 13
-    },
-    {
-      "marca": "Honda",
-      "modelo": "CB600F",
-      "ano": 2013,
-      "categoria": "moto",
-      "valor": 28990,
-      "unidadesEmEstoque": 0,
-      "imagemUrl": "http://www.doydomotos.com/wp/wp-content/uploads/2016/12/HORNET-2014-5.png",
-      "id": 14
-    },
-    {
-      "marca": "Honda",
-      "modelo": "CB600F",
-      "ano": 2013,
-      "categoria": "moto",
-      "valor": 28990,
-      "unidadesEmEstoque": 0,
-      "imagemUrl": "http://www.doydomotos.com/wp/wp-content/uploads/2016/12/HORNET-2014-5.png",
-      "id": 15
-    },
-    {
-      "marca": "Honda",
-      "modelo": "CB600F",
-      "ano": 2013,
-      "categoria": "moto",
-      "valor": 28990,
-      "unidadesEmEstoque": 0,
+      "unidadesEmEstoque": 6,
       "imagemUrl": "http://www.doydomotos.com/wp/wp-content/uploads/2016/12/HORNET-2014-5.png",
       "id": 16
-    },
-    {
-      "marca": "Honda",
-      "modelo": "CB600F",
-      "ano": 2013,
-      "categoria": "moto",
-      "valor": 28990,
-      "unidadesEmEstoque": 0,
-      "imagemUrl": "http://www.doydomotos.com/wp/wp-content/uploads/2016/12/HORNET-2014-5.png",
-      "id": 17
-    },
-    {
-      "marca": "Honda",
-      "modelo": "CB600F",
-      "ano": 2013,
-      "categoria": "moto",
-      "valor": 28990,
-      "unidadesEmEstoque": 0,
-      "imagemUrl": "http://www.doydomotos.com/wp/wp-content/uploads/2016/12/HORNET-2014-5.png",
-      "id": 18
-    },
-    {
-      "marca": "Honda",
-      "modelo": "CB600F",
-      "ano": 2013,
-      "categoria": "moto",
-      "valor": 28990,
-      "unidadesEmEstoque": 0,
-      "imagemUrl": "http://www.doydomotos.com/wp/wp-content/uploads/2016/12/HORNET-2014-5.png",
-      "id": 19
-    },
-    {
-      "marca": "Honda",
-      "modelo": "CB600F",
-      "ano": 2013,
-      "categoria": "moto",
-      "valor": 28990,
-      "unidadesEmEstoque": 0,
-      "imagemUrl": "http://www.doydomotos.com/wp/wp-content/uploads/2016/12/HORNET-2014-5.png",
-      "id": 20
-    },
-    {
-      "marca": "Honda",
-      "modelo": "CB600F",
-      "ano": 2013,
-      "categoria": "moto",
-      "valor": 28990,
-      "unidadesEmEstoque": 0,
-      "imagemUrl": "http://www.doydomotos.com/wp/wp-content/uploads/2016/12/HORNET-2014-5.png",
-      "id": 21
-    },
-    {
-      "marca": "Honda",
-      "modelo": "CB600F",
-      "ano": 2013,
-      "categoria": "moto",
-      "valor": 28990,
-      "unidadesEmEstoque": 0,
-      "imagemUrl": "http://www.doydomotos.com/wp/wp-content/uploads/2016/12/HORNET-2014-5.png",
-      "id": 22
     }
+
   ],
   "usuarios": [
     {
@@ -237,21 +148,12 @@
       "nome": "Ilson Hipster",
       "veiculosComprados": [
         {
-          "id": 1,
-          "marca": "Chevrolet",
-          "modelo": "Agile LT 1.4 MPFI 8V flex",
-          "ano": 2010,
+          "id": 2,
+          "marca": "Dodge",
+          "modelo": "Dakota Durango SLT 5.2 4x4 V8",
+          "ano": 1998,
           "categoria": "carro",
-          "dataCompra": "12 Julho 2018",
-          "placa": "ASD-1234"
-        },
-        {
-          "id": 1,
-          "marca": "Chevrolet",
-          "modelo": "Agile LT 1.4 MPFI 8V flex",
-          "ano": 2010,
-          "categoria": "carro",
-          "dataCompra": "12 Julho 2018",
+          "dataCompra": "13 Julho 2018",
           "placa": "ASD-1234"
         }
       ]
