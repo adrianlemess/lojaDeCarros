@@ -10,8 +10,8 @@ export interface IUsuario {
 }
 
 export enum PerfilUsuarioEnum {
-  ADMINISTRADOR = 'ADMINISTRADOR',
-  CLIENTE = 'CLIENTE'
+  ADMINISTRADOR = 'administrador',
+  CLIENTE = 'cliente'
 }
 
 export class Usuario implements IUsuario {

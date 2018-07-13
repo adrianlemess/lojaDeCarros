@@ -4,11 +4,11 @@
       "id": 1,
       "marca": "Chevrolet",
       "modelo": "Agile LT 1.4 MPFI 8V flex",
-      "valor": 21500,
-      "unidadesEmEstoque": 5,
       "ano": 2010,
       "categoria": "carro",
-      "imagemUrl": "https://img.olx.com.br/images/67/671816000602508.jpg"
+      "imagemUrl": "https://img.olx.com.br/images/67/671816000602508.jpg",
+      "valor": 21500,
+      "unidadesEmEstoque": 0
     },
     {
       "id": 2,
@@ -232,9 +232,29 @@
     {
       "id": 2,
       "perfil": "cliente",
-      "nome": "Ilson Hipster",
+      "password": "123456",
       "email": "ilsonhipster@gmail.com",
-      "password": "123456"
+      "nome": "Ilson Hipster",
+      "veiculosComprados": [
+        {
+          "id": 1,
+          "marca": "Chevrolet",
+          "modelo": "Agile LT 1.4 MPFI 8V flex",
+          "ano": 2010,
+          "categoria": "carro",
+          "dataCompra": "12 Julho 2018",
+          "placa": "ASD-1234"
+        },
+        {
+          "id": 1,
+          "marca": "Chevrolet",
+          "modelo": "Agile LT 1.4 MPFI 8V flex",
+          "ano": 2010,
+          "categoria": "carro",
+          "dataCompra": "12 Julho 2018",
+          "placa": "ASD-1234"
+        }
+      ]
     }
   ],
   "categorias": [

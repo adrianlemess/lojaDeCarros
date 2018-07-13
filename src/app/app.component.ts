@@ -19,13 +19,15 @@ export class AppComponent {
 
   // métodos criados temporariamente para teste
   comprarVeiculo() {
-    this.veiculosService.comprarVeiculo(this.listaVeiculos[0], this.clientes[0], 'ASD-1234');
+    this.veiculosService.comprarVeiculo(this.listaVeiculos[0], this.clientes[0], 'ASD-1234')
+      .subscribe(resultadoCompra => console.log(resultadoCompra));
   }
 
   getVeiculosParaVenda() {
     this.veiculosService.getVeiculos(categoriaEnum.CARRO)
       .subscribe((veiculos: VeiculoParaVenda[]) => {
         this.listaVeiculos = veiculos;
+        console.log('listaVeiculosParaVenda', veiculos);
         this.getClientes();
 
       });

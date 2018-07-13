@@ -46,7 +46,7 @@ export class VeiculoParaVenda extends Veiculo implements IVeiculoPraVenda {
   }
 
   diminuirUnidadeEmEstoquePorUnidade() {
-    if (this.unidadesEmEstoque) {
+    if (this.unidadesEmEstoque === 0) {
       throw new Error('Veículo não está mais disponível para compra');
     }
     this.unidadesEmEstoque -= 1;
@@ -59,11 +59,12 @@ export class VeiculoComprado extends Veiculo implements VeiculoComprado {
 
   constructor(veiculoComprado: Veiculo, placa: string) {
     super(veiculoComprado);
-    this.dataCompra = this.getDataAtual(Date.now());
+    this.dataCompra = this.getDataAtual();
     this.placa = placa;
   }
 
-  private getDataAtual(date): string {
+  private getDataAtual(): string {
+    const dataAtual = new Date();
     const monthNames = [
       'Janeiro', 'Fevereiro', 'Março',
       'Abril', 'Maio', 'Junho', 'Julho',
@@ -71,9 +72,9 @@ export class VeiculoComprado extends Veiculo implements VeiculoComprado {
       'Novembro', 'Dezembro'
     ];
 
-    const day = date.getDate();
-    const monthIndex = date.getMonth();
-    const year = date.getFullYear();
+    const day = dataAtual.getDate();
+    const monthIndex = dataAtual.getMonth();
+    const year = dataAtual.getFullYear();
 
     return day + ' ' + monthNames[monthIndex] + ' ' + year;
   }

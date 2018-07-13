@@ -11,12 +11,12 @@ import { HttpBase } from './http-base';
 export class UsuarioService extends HttpBase {
 
   constructor(private _httpClient: HttpClient) {
-    super('clientes');
+    super('usuarios');
   }
 
   getUsuarios(): Observable<IUsuario[]> {
     return this._httpClient.get<IUsuario[]>(
-      `${this.UrlBase}&perfil=${PerfilUsuarioEnum.CLIENTE}`)
+      `${this.UrlBase}?perfil=${PerfilUsuarioEnum.CLIENTE}`)
       .pipe(
         take(1),
         map((usuarios: IUsuario[]) => {
@@ -33,6 +33,6 @@ export class UsuarioService extends HttpBase {
   setVeiculoCompradoPorCliente(usuario: Usuario, veiculoComprado: VeiculoComprado) {
     usuario.VeiculosComprados = veiculoComprado;
     return this._httpClient.put<Usuario>(
-      `${this.UrlBase}`, usuario);
+      `${this.UrlBase}/${usuario.id}`, usuario);
   }
 }
