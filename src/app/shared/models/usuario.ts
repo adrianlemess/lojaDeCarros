@@ -1,4 +1,4 @@
-import { IVeiculo, IVeiculoComprado, Veiculo } from './veiculo';
+import { IVeiculoComprado } from './veiculo';
 
 export interface IUsuario {
   id: number;
