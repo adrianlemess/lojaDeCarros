@@ -10,3 +10,4 @@
 #Cliente
 - cadastrarCliente
 - Login
+- getUsuarios
