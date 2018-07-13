@@ -3,7 +3,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { take, map, distinctUntilChanged, retry, switchMap } from 'rxjs/operators';
 
-import { ICategoria, Categoria, categoriaEnum } from '../shared/models/categoria';
+import { categoriaEnum } from '../shared/models/categoria';
 import { VeiculoParaVenda, Veiculo, VeiculoComprado, Usuario } from '../shared/models';
 import { HttpBase } from './http-base';
 import { UsuarioService } from './usuario.service';
