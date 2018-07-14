@@ -39,7 +39,7 @@ export class AppComponent {
   //       this.clientes = usuarios.filter(usuario => usuario.perfil === PerfilUsuarioEnum.CLIENTE);
   //       this.comprarVeiculo();
   //     });
-  }
+  // }
 
 
 }

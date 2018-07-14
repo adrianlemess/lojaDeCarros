@@ -5,10 +5,12 @@ import { InformarCategoriaComponent } from './informar-categoria/informar-catego
 import { ListarVeiculosComponent } from './listar-veiculos/listar-veiculos.component';
 import { CadastrarVeiculoComponent } from './cadastrar-veiculo/cadastrar-veiculo.component';
 import { DetalhesVeiculoComponent } from './detalhes-veiculo/detalhes-veiculo.component';
+import { VeiculoRoutingModule } from './veiculo-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    VeiculoRoutingModule
   ],
   declarations: [HomeComponent, InformarCategoriaComponent, ListarVeiculosComponent, CadastrarVeiculoComponent, DetalhesVeiculoComponent]
 })

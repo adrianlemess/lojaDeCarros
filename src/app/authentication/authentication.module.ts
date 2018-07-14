@@ -7,6 +7,8 @@ import { CadastrarUsuarioComponent } from './cadastrar-usuario/cadastrar-usuario
   imports: [
     CommonModule
   ],
-  declarations: [LoginComponent, CadastrarUsuarioComponent]
+  declarations: [LoginComponent, CadastrarUsuarioComponent],
+  exports: [LoginComponent, CadastrarUsuarioComponent]
+
 })
 export class AuthenticationModule { }
