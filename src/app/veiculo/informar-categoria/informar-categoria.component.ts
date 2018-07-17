@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '../../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-informar-categoria',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InformarCategoriaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit() {
   }
 
+  navegarParaListagem() {
+    this._router.navigate(['/veiculos', 'listar'], {
+      queryParams: { msg: 'olá'}
+    });
+  }
 }

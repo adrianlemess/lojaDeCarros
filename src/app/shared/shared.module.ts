@@ -4,10 +4,12 @@ import { TopoComponent } from './components/topo/topo.component';
 import { CardComponent } from './components/card/card.component';
 import { SecaoComponent } from './components/secao/secao.component';
 import { Tela404Component } from './components/tela404/tela404.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   declarations: [
     TopoComponent,

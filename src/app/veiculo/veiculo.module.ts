@@ -6,11 +6,13 @@ import { ListarVeiculosComponent } from './listar-veiculos/listar-veiculos.compo
 import { CadastrarVeiculoComponent } from './cadastrar-veiculo/cadastrar-veiculo.component';
 import { DetalhesVeiculoComponent } from './detalhes-veiculo/detalhes-veiculo.component';
 import { VeiculoRoutingModule } from './veiculo-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    VeiculoRoutingModule
+    VeiculoRoutingModule,
+    SharedModule
   ],
   declarations: [HomeComponent, InformarCategoriaComponent, ListarVeiculosComponent, CadastrarVeiculoComponent, DetalhesVeiculoComponent]
 })

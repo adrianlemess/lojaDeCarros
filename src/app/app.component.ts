@@ -9,12 +9,12 @@ import { UsuarioService } from './services/usuario.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
-  listaVeiculos: VeiculoParaVenda[];
-  clientes: Usuario[];
+  public tituloTopo = 'Loja Virtual';
+  // listaVeiculos: VeiculoParaVenda[];
+  // clientes: Usuario[];
 
   constructor(private veiculosService: VeiculoService, private usuarioService: UsuarioService) {
-    this.getVeiculosParaVenda();
+    // this.getVeiculosParaVenda();
   }
 
   // // métodos criados temporariamente para teste
@@ -23,15 +23,15 @@ export class AppComponent {
   //     .subscribe(resultadoCompra => console.log(resultadoCompra));
   // }
 
-  getVeiculosParaVenda() {
-    this.veiculosService.getVeiculos(categoriaEnum.CARRO)
-      .subscribe((veiculos: VeiculoParaVenda[]) => {
-        this.listaVeiculos = veiculos;
-        console.log('listaVeiculosParaVenda', veiculos);
-        // this.getClientes();
+  // getVeiculosParaVenda() {
+  //   this.veiculosService.getVeiculos(categoriaEnum.CARRO)
+  //     .subscribe((veiculos: VeiculoParaVenda[]) => {
+  //       this.listaVeiculos = veiculos;
+  //       console.log('listaVeiculosParaVenda', veiculos);
+  //       // this.getClientes();
 
-      });
-  }
+  //     });
+  // }
 
   // getClientes() {
   //   this.usuarioService.getUsuarios()

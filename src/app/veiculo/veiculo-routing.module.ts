@@ -21,7 +21,7 @@ const routes: Routes = [
         component: InformarCategoriaComponent
       },
       {
-        path: 'detalhes',
+        path: 'detalhes/:id',
         component: DetalhesVeiculoComponent
       },
       {
