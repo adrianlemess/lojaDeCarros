@@ -12,12 +12,9 @@ export class ListarVeiculosComponent implements OnInit {
     private _routerActivated: ActivatedRoute
   ) { }
 
-  // http://localhost:4200/veiculos/listar?msg=ol%C3%A1
-
   ngOnInit() {
-    this._routerActivated.url.subscribe((dados) => console.log(dados));
     this._routerActivated.queryParams
-      .subscribe(data => console.log(data.msg));
+      .subscribe(data => console.log(data));
   }
 
   onEditar(id: number) {
