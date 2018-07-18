@@ -24,12 +24,18 @@ export class Veiculo implements IVeiculo {
   public ano: number;
   public categoria: string;
 
+
   constructor(veiculo: IVeiculo) {
     this.id = veiculo.id;
     this.marca = veiculo.marca;
     this.modelo = veiculo.modelo;
     this.ano = veiculo.ano;
     this.categoria = veiculo.categoria;
+  }
+
+  get Titulo() {
+    return `${this.marca} - ${this.modelo} - ${this.ano}`;
+
   }
 }
 

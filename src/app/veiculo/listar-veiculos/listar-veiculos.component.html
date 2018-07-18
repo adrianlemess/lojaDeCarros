@@ -3,15 +3,20 @@
   titulo="Veículos"
   subtitulo="Listar Veículos"
 >
-<app-card
-  id="1"
-  titulo="Mitsubishi - Eclipse GT 3.8 V6 267cv - 2011"
-  valor="60000"
-  unidadesEmEstoque="5"
-  imagemUrl="https://http2.mlstatic.com/mitsubishi-eclipse-gt-v6-2007-2008-D_NQ_NP_922101-MLB20283158988_042015-F.jpg"
-  (editar)="onEditar($event)"
-  (comprar)="onComprar($event)"
-  >
+  <div
+    class="d-flex flex-wrap justify-content-between bd-highlight">
+    <app-card
+    *ngFor="let veiculo of veiculos"
+    [id]="veiculo.id"
+    [titulo]="veiculo.Titulo"
+    [valor]="veiculo.valor"
+    [unidadesEmEstoque]="veiculo.unidadesEmEstoque"
+    [imagemUrl]="veiculo.imagemUrl"
+    (editar)="onEditar($event)"
+    (comprar)="onComprar($event)"
+    >
+    </app-card>
 
-</app-card>
+  </div>
+  <!--  -->
 </app-secao>
