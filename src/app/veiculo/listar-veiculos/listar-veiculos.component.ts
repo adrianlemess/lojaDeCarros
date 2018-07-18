@@ -19,4 +19,12 @@ export class ListarVeiculosComponent implements OnInit {
     this._routerActivated.queryParams
       .subscribe(data => console.log(data.msg));
   }
+
+  onEditar(id: number) {
+    console.log('onEditar', id);
+  }
+
+  onComprar(id: number) {
+    console.log('onComprar', id);
+  }
 }

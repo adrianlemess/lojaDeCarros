@@ -3,7 +3,15 @@
   titulo="Veículos"
   subtitulo="Listar Veículos"
 >
-<p>
-  listar-veiculos works!
-</p>
+<app-card
+  id="1"
+  titulo="Mitsubishi - Eclipse GT 3.8 V6 267cv - 2011"
+  valor="60000"
+  unidadesEmEstoque="5"
+  imagemUrl="https://http2.mlstatic.com/mitsubishi-eclipse-gt-v6-2007-2008-D_NQ_NP_922101-MLB20283158988_042015-F.jpg"
+  (editar)="onEditar($event)"
+  (comprar)="onComprar($event)"
+  >
+
+</app-card>
 </app-secao>

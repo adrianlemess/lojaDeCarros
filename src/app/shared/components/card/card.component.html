@@ -1,3 +1,13 @@
-<p>
-  card works!
-</p>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" [src]="imagemUrl" [alt]="'imagem do veiculo ' + titulo">
+  <div class="card-body">
+    <h5 class="card-title">{{ titulo }}</h5>
+    <p class="card-text">
+      <span> Preço: </span> {{ valor }}
+    </p>
+    <div class="d-flex justify-content-between">
+      <button class="btn btn-warning" (click)="onEditar()" >Editar</button>
+      <button class="btn btn-success" (click)="onComprar()">Comprar</button>
+    </div>
+  </div>
+</div>
