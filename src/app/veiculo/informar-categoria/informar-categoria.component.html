@@ -2,5 +2,8 @@
   titulo="Veículos"
   subtitulo="Informar Categoria"
 >
-<button (click)="this.navegarParaListagem()"> Listagem </button>
+<button class="btn btn-primary" [routerLink]="['/veiculos', 'listar']" [queryParams]="{tipoVeiculo: categorias.CAMINHAO }"> Caminhão </button>
+<button class="btn btn-success" [routerLink]="['/veiculos', 'listar']" [queryParams]="{tipoVeiculo: categorias.CARRO }"> Carro </button>
+<button class="btn btn-warning" [routerLink]="['/veiculos', 'listar']" [queryParams]="{tipoVeiculo: categorias.MOTO }"> Moto </button>
+
 </app-secao>

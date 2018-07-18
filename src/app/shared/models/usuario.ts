@@ -1,12 +1,12 @@
 import { IVeiculoComprado } from './veiculo';
 
 export interface IUsuario {
-  id: number;
-  perfil: PerfilUsuarioEnum;
-  nome: string;
+  id?: number;
+  perfil?: PerfilUsuarioEnum;
+  nome?: string;
   email: string;
   password: string;
-  veiculosComprados: IVeiculoComprado[];
+  veiculosComprados?: IVeiculoComprado[];
 }
 
 export enum PerfilUsuarioEnum {
@@ -15,12 +15,12 @@ export enum PerfilUsuarioEnum {
 }
 
 export class Usuario implements IUsuario {
-  public id: number;
-  public perfil: PerfilUsuarioEnum;
-  public nome: string;
+  public id?: number;
+  public perfil?: PerfilUsuarioEnum;
+  public nome?: string;
   public email: string;
   public password: string;
-  public veiculosComprados: IVeiculoComprado[];
+  public veiculosComprados?: IVeiculoComprado[];
 
   constructor(usuario: IUsuario) {
     this.id = usuario.id;

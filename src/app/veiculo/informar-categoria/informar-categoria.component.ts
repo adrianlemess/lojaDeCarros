@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '../../../../node_modules/@angular/router';
+import { categoriaEnum } from '../../shared/models';
 
 @Component({
   selector: 'app-informar-categoria',
@@ -9,13 +10,8 @@ import { Router } from '../../../../node_modules/@angular/router';
 export class InformarCategoriaComponent implements OnInit {
 
   constructor(private _router: Router) { }
+  public categorias = categoriaEnum;
 
   ngOnInit() {
-  }
-
-  navegarParaListagem() {
-    this._router.navigate(['/veiculos', 'listar'], {
-      queryParams: { msg: 'olá'}
-    });
   }
 }

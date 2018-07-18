@@ -14,6 +14,16 @@ export class UsuarioService extends HttpBase {
     super('usuarios');
   }
 
+  loginUsuario(email: string, password: string): Observable<IUsuario> {
+    return this._httpClient.get<IUsuario>(
+      `${this.UrlBase}?email=${email}&password=${password}`)
+      .pipe(
+        take(1),
+        map((usuario: IUsuario) => {
+          return new Usuario(usuario);
+        }));
+  }
+
   getUsuarios(): Observable<IUsuario[]> {
     return this._httpClient.get<IUsuario[]>(
       `${this.UrlBase}?perfil=${PerfilUsuarioEnum.CLIENTE}`)
