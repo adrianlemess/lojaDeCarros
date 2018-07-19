@@ -7,6 +7,7 @@ import { AuthenticationModule } from './authentication/authentication.module';
 import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './veiculo/home/home.component';
 import { AdminModule } from './admin/admin.module';
+import { AuthGuard } from './services/guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -24,8 +25,7 @@ const routes: Routes = [
   },
   {
     path: 'veiculos',
-    loadChildren: './veiculo/veiculo.module#VeiculoModule'
-  },
+    loadChildren: './veiculo/veiculo.module#VeiculoModule'  },
   {
     path: 'admin',
     loadChildren: './admin/admin.module#AdminModule'

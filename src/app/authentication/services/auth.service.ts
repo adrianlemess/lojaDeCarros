@@ -24,7 +24,7 @@ export class AuthService {
   }
 
   isAuthenticated() {
-    return !isNullOrUndefined(this.usuarioLogado);
+    return !isNullOrUndefined(this.getCurrentUser());
   }
 
   setCurrentUser(usuario: Usuario) {
