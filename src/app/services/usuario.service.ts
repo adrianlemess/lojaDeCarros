@@ -19,8 +19,12 @@ export class UsuarioService extends HttpBase {
       `${this.UrlBase}?email=${email}&password=${password}`)
       .pipe(
         take(1),
-        map((usuario: IUsuario) => {
-          return new Usuario(usuario);
+        map((usuarios: IUsuario[]) => {
+          if (usuarios.length > 0) {
+            return new Usuario(usuarios[0]);
+          } else  {
+            return null;
+          }
         }));
   }
 

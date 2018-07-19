@@ -9,7 +9,7 @@
     *ngFor="let veiculo of veiculos"
     [id]="veiculo.id"
     [titulo]="veiculo.Titulo"
-    [valor]="veiculo.valor"
+    [valor]="veiculo.valor | currency:'BRL':true:'1.2-2'"
     [unidadesEmEstoque]="veiculo.unidadesEmEstoque"
     [imagemUrl]="veiculo.imagemUrl"
     (editar)="onEditar($event)"
