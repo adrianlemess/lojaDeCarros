@@ -31,7 +31,7 @@ const routes: Routes = [
         component: ListarVeiculosComponent
       },
       {
-        path: 'cadastar',
+        path: 'cadastrar',
         component: CadastrarVeiculoComponent
       }
     ]

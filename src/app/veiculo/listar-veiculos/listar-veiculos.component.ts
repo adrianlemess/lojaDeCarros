@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterState, RouterLinkActive, ActivatedRoute } from '../../../../node_modules/@angular/router';
 import { VeiculoService } from '../../services/veiculo.service';
-import { Veiculo, categoriaEnum, VeiculoParaVenda } from '../../shared/models';
+import { Veiculo, categoriaEnum, VeiculoParaVenda, PerfilUsuarioEnum } from '../../shared/models';
+import { AuthService } from '../../authentication/services/auth.service';
 
 @Component({
   selector: 'app-listar-veiculos',
@@ -14,7 +15,8 @@ export class ListarVeiculosComponent implements OnInit {
 
   constructor(
     private _routerActivated: ActivatedRoute,
-    private _veiculosService: VeiculoService
+    private _veiculosService: VeiculoService,
+    private _authService: AuthService
   ) { }
 
   ngOnInit() {
@@ -40,5 +42,9 @@ export class ListarVeiculosComponent implements OnInit {
 
   onComprar(id: number) {
     console.log('onComprar', id);
+  }
+
+  isUsuarioAdmin() {
+    return this._authService.getProfile() === PerfilUsuarioEnum.ADMINISTRADOR;
   }
 }

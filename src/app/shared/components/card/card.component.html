@@ -6,7 +6,7 @@
       <span> Preço: </span> {{ valor }}
     </p>
     <div class="d-flex justify-content-between">
-      <button class="btn btn-warning" (click)="onEditar()" >Editar</button>
+      <button *ngIf="podeExibirEditar" class="btn btn-warning" (click)="onEditar()" >Editar</button>
       <button class="btn btn-success" (click)="onComprar()">Comprar</button>
     </div>
   </div>

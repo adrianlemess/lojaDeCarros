@@ -21,6 +21,9 @@ export class CardComponent implements OnInit {
   @Input()
   public imagemUrl: string;
 
+  @Input()
+  public podeExibirEditar = false;
+
   @Output()
   public editar = new EventEmitter<number>();
 
