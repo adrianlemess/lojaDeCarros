@@ -9,6 +9,8 @@ export class TopoComponent implements OnInit {
   @Input()
   public title: string;
 
+  @Input()
+  public podeExibirMenu: boolean;
   constructor() { }
 
   ngOnInit() {

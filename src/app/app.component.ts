@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { VeiculoService } from './services/veiculo.service';
 import { Categoria, IVeiculo, categoriaEnum, VeiculoParaVenda, Usuario, PerfilUsuarioEnum } from './shared/models';
 import { UsuarioService } from './services/usuario.service';
+import { AuthService } from './authentication/services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +14,12 @@ export class AppComponent {
   // listaVeiculos: VeiculoParaVenda[];
   // clientes: Usuario[];
 
-  constructor(private veiculosService: VeiculoService, private usuarioService: UsuarioService) {
+  constructor(private _authService: AuthService, private usuarioService: UsuarioService) {
     // this.getVeiculosParaVenda();
+  }
+
+  isPerfilAdmin() {
+    return this._authService.getProfile() === PerfilUsuarioEnum.ADMINISTRADOR;
   }
 
   // // métodos criados temporariamente para teste

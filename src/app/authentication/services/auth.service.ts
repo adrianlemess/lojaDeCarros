@@ -33,7 +33,7 @@ export class AuthService {
   }
 
   getProfile() {
-    return this.usuarioLogado.perfil;
+    return this.usuarioLogado ? this.usuarioLogado.perfil : '';
   }
 
   private save(usuario: Usuario) {
