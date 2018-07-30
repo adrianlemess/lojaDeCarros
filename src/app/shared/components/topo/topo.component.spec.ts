@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TopoComponent } from './topo.component';
+import { SharedModule } from '../../shared.module';
+import { RouterTestingModule } from '../../../../../node_modules/@angular/router/testing';
 
 describe('TopoComponent', () => {
   let component: TopoComponent;
@@ -8,7 +10,11 @@ describe('TopoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TopoComponent ]
+      imports: [
+        SharedModule,
+        RouterTestingModule.withRoutes([])
+      ],
+      declarations: [ ]
     })
     .compileComponents();
   }));

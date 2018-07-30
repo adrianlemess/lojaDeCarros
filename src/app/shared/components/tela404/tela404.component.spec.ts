@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Tela404Component } from './tela404.component';
+import { SharedModule } from '../../shared.module';
 
 describe('Tela404Component', () => {
   let component: Tela404Component;
@@ -8,7 +9,8 @@ describe('Tela404Component', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Tela404Component ]
+      imports: [SharedModule],
+      declarations: [ ]
     })
     .compileComponents();
   }));

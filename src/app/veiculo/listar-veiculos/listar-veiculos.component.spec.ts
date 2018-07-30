@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ListarVeiculosComponent } from './listar-veiculos.component';
+import { SharedModule } from '../../shared/shared.module';
+import { RouterTestingModule } from '../../../../node_modules/@angular/router/testing';
 
 describe('ListarVeiculosComponent', () => {
   let component: ListarVeiculosComponent;
@@ -8,6 +10,7 @@ describe('ListarVeiculosComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [SharedModule, RouterTestingModule.withRoutes([])],
       declarations: [ ListarVeiculosComponent ]
     })
     .compileComponents();

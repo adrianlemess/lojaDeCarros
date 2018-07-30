@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ListarClientesComponent } from './listar-clientes.component';
+import { SharedModule } from '../../shared/shared.module';
 
 describe('ListarClientesComponent', () => {
   let component: ListarClientesComponent;
@@ -8,6 +9,9 @@ describe('ListarClientesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        SharedModule
+      ],
       declarations: [ ListarClientesComponent ]
     })
     .compileComponents();

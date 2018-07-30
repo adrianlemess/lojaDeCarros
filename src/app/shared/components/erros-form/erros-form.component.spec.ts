@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ErrosFormComponent } from './erros-form.component';
+import { SharedModule } from '../../shared.module';
 
 describe('ErrosFormComponent', () => {
   let component: ErrosFormComponent;
@@ -8,7 +9,8 @@ describe('ErrosFormComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ErrosFormComponent ]
+      imports: [SharedModule],
+      declarations: [ ]
     })
     .compileComponents();
   }));
