@@ -5,6 +5,7 @@ import { CardComponent } from './components/card/card.component';
 import { SecaoComponent } from './components/secao/secao.component';
 import { Tela404Component } from './components/tela404/tela404.component';
 import { RouterModule } from '@angular/router';
+import { ErrosFormComponent } from './components/erros-form/erros-form.component';
 
 @NgModule({
   imports: [
@@ -15,14 +16,16 @@ import { RouterModule } from '@angular/router';
     TopoComponent,
     CardComponent,
     SecaoComponent,
-    Tela404Component
+    Tela404Component,
+    ErrosFormComponent
   ],
   exports: [
     // Components
     TopoComponent,
     CardComponent,
     SecaoComponent,
-    Tela404Component
+    Tela404Component,
+    ErrosFormComponent
   ]
 })
 export class SharedModule { }

@@ -3,7 +3,47 @@
 titulo="Autenticação"
 subtitulo="Cadastro de usuário"
 >
-<p>
-  cadastrar-usuario works!
-</p>
+<form [formGroup]="usuarioForm" (submit)="onSubmit()">
+    <div class="form-group">
+        <label for="perfis">Selecione um perfil</label>
+        <select formControlName="perfil" class="form-control" id="perfis">
+          <option *ngFor="let perfil of arrayPerfis">{{ perfil }}</option>
+        </select>
+      </div>
+    <div class="form-group">
+      <label for="email">Email: </label>
+      <input formControlName="email" type="email" class="form-control" id="email"  placeholder="Digite o email...">
+
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input formControlName="password" type="password" class="form-control" id="password" placeholder="Digite uma senha...">
+    </div>
+
+    <div class="form-group">
+        <label for="nome">nome: </label>
+        <input formControlName="nome" type="text" class="form-control" id="nome"  placeholder="Digite o nome...">
+        <app-erros-form
+        *ngIf="getErrosPorCampo('nome') && usuarioForm.status === 'submited'"
+        [erros]="getErrosPorCampo('nome')"
+        ></app-erros-form>
+      </div>
+    <div formGroupName="endereco">
+        <h2>
+            Endereço:
+          </h2>
+          <div class="form-group">
+              <label for="rua">Rua</label>
+              <input formControlName="rua" type="text" class="form-control" id="rua" placeholder="Digite a rua">
+            </div>
+
+            <div class="form-group">
+                <label for="numero">Número: </label>
+                <input formControlName="numero" type="number" class="form-control" id="numero"  placeholder="Digite o número da casa...">
+            </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
 </app-secao>
